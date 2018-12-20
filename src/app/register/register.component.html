@@ -1,0 +1,45 @@
+<mat-grid-list cols="4" rowHeight="500">
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile colspan="2">
+        <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title class="title">Register</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <form class="example-form">
+                <table class="table-ex" cellspacing="0">
+                  <tr>
+                    <td>
+                      <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Username" name="name" required>
+                      </mat-form-field>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td>
+                        <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Email" name="email" type="email" required>
+                        </mat-form-field>
+                      </td>
+                    </tr>
+                  <tr>
+                      <td><mat-form-field class="example-full-width">
+                        <input matInput placeholder="Password" type="password" name="password" required>
+                      </mat-form-field></td>
+                    </tr>
+                    <tr>
+                        <td><mat-form-field class="example-full-width">
+                          <input matInput placeholder="ReEnter Password" type="password" name="repassword" required>
+                        </mat-form-field></td>
+                      </tr>
+
+              </table>
+              </form>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-raised-button (click)="register()" color="primary">Register</button>
+            </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+  </mat-grid-list>

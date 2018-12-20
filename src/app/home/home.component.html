@@ -1,0 +1,20 @@
+<br>
+<mat-list>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+        <h2>
+            Example to Use Angular Material Grid
+         </h2>
+        </mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list>
+<br>
+<mat-grid-list cols="4" rowHeight="150px">
+    <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color">
+      {{tile.text}}
+    </mat-grid-tile>
+  </mat-grid-list>
